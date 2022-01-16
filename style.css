@@ -32,11 +32,11 @@ body{
 }
 .menu-bar li, i{
     list-style: none;
-    margin: 10px;
+    margin: 8px;
 }
 .menu-bar li a{
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
     color: black;
     font-weight: 700px;
     font-size: 20px;
@@ -44,6 +44,12 @@ body{
 .menu-bar .fas{
     padding: 10px;
     font-size: 20px;
+}
+#nav-toggler{
+    display: none;
+}
+.toggler-icon{
+    display: none;   
 }
 /* banner section */
 .banner{
@@ -167,6 +173,30 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .nav-responsive{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .toggler-icon{
+        display: block;
+    }
+    .menu-bar{
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center; 
+        transform: translateY(-390px);
+    }
+    #nav-toggler:checked .menu-bar{
+        transform: translateY(0px);
+    }
+    .menu-bar .color-nav{
+        font-weight: bold;
     }
     .banner{
         font-size: 10px;

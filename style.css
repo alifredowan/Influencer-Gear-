@@ -190,10 +190,6 @@ body{
         flex-direction: column;
         align-items:center;
         justify-content: center; 
-        transform: translateY(-390px);
-    }
-    #nav-toggler:checked .menu-bar{
-        transform: translateY(0px);
     }
     .menu-bar .color-nav{
         font-weight: bold;
